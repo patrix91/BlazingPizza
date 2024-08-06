@@ -1,7 +1,10 @@
+using BlazingPizza.Dane;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddSingleton<PizzaService>();
 
 var app = builder.Build();
 
