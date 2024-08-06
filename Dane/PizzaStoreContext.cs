@@ -1,6 +1,5 @@
 ﻿using BlazingPizza.Model;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 
 namespace BlazingPizza.Dane;
 

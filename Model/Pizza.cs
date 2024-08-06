@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using BlazingPizza.Model;
 
 namespace BlazingPizza
 {
@@ -12,43 +11,31 @@ namespace BlazingPizza
         public const int MinimumSize = 9;
         public const int MaximumSize = 17;
 
-        //public int Id { get; set; }
+        public int Id { get; set; }
 
-        //public int OrderId { get; set; }
+        public int OrderId { get; set; }
 
-        //public PizzaSpecial Special { get; set; }
+        public PizzaSpecial Special { get; set; }
 
-        //public int SpecialId { get; set; }
+        public int SpecialId { get; set; }
 
-        //public int Size { get; set; }
+        public int Size { get; set; }
 
-        //public List<PizzaTopping> Toppings { get; set; }
+        public List<PizzaTopping> Toppings { get; set; }
 
-        //public decimal GetBasePrice()
-        //{
-        //    return ((decimal)Size / (decimal)DefaultSize) * Special.BasePrice;
-        //}
+        public decimal GetBasePrice()
+        {
+            return ((decimal)Size / (decimal)DefaultSize) * Special.BasePrice;
+        }
 
-        //public decimal GetTotalPrice()
-        //{
-        //    return GetBasePrice();
-        //}
+        public decimal GetTotalPrice()
+        {
+            return GetBasePrice();
+        }
 
-        //public string GetFormattedTotalPrice()
-        //{
-        //    return GetTotalPrice().ToString("0.00");
-        //}
-
-        public int PizzaId { get; set; }
-
-        public string Name { get; set; }
-
-        public string Description { get; set; }
-
-        public decimal Price { get; set; }
-
-        public bool Vegetarian { get; set; }
-
-        public bool Vegan { get; set; }
+        public string GetFormattedTotalPrice()
+        {
+            return GetTotalPrice().ToString("0.00");
+        }
     }
 }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using BlazingPizza.Dane;
 using BlazingPizza.Model;
 
-namespace BlazingPizza.Controllers;
+namespace BlazingPizza.Kontroler;
 
 [Route("specials")]
 [ApiController]
