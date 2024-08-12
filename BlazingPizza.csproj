@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -7,6 +7,12 @@
 
   <ItemGroup>
     <Compile Remove="Dane\PizzaService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="pizza — kopia.db" />
+    <None Remove="pizza — kopia.db-shm" />
+    <None Remove="pizza — kopia.db-wal" />
   </ItemGroup>
 
   <ItemGroup>
