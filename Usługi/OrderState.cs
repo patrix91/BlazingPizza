@@ -36,5 +36,14 @@ namespace BlazingPizza.Usługi
 
             ShowingConfigureDialog = false;
         }
+
+        /// <summary>
+        /// Usuń konfigurowalną pizze z zamówienia.
+        /// </summary>
+        /// <param name="pizza"></param>
+        public void RemoveConfiguredPizza(Pizza pizza)
+        {
+            Order.Pizzas.Remove(pizza);
+        }
     }
 }
