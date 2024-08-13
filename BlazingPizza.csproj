@@ -16,6 +16,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="BlazingPizza.sln" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.7" />
   </ItemGroup>
