@@ -3,13 +3,13 @@
 namespace BlazingPizza
 {
     /// <summary>
-    /// Represents a customized pizza as part of an order
+    /// Przedstawia customową pizze, którą można zamówić.
     /// </summary>
     public class Pizza
     {
-        public const int DefaultSize = 12;
-        public const int MinimumSize = 9;
-        public const int MaximumSize = 17;
+        public const int DefaultSize = 32;
+        public const int MinimumSize = 24;
+        public const int MaximumSize = 54;
 
         public int Id { get; set; }
 
@@ -21,6 +21,9 @@ namespace BlazingPizza
 
         public int Size { get; set; }
 
+        /// <summary>
+        /// Topy - czyli składniki dodatkowe, które można dodać do pizzy.
+        /// </summary>
         public List<PizzaTopping> Toppings { get; set; }
 
         public decimal GetBasePrice()

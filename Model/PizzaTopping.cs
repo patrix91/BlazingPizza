@@ -1,5 +1,8 @@
 ﻿namespace BlazingPizza
 {
+    /// <summary>
+    /// Topy które mozna dodać do pizzy
+    /// </summary>
     public class PizzaTopping
     {
         public Topping Topping { get; set; }
