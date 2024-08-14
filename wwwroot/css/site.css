@@ -198,7 +198,7 @@ form {
         line-height: 2rem;
     }
 
-.price::before {
+.price::after {
     content: 'zł';
     font-weight: 300;
     font-size: 1.2rem;
@@ -250,7 +250,7 @@ form {
         font-size: 1.5rem;
     }
 
-        .order-total .total-price::before {
+        .order-total .total-price::after {
             content: 'zł';
             font-weight: 300;
             margin: 0 0.1rem 0 0.4rem;
@@ -307,7 +307,7 @@ form {
     font-weight: 500;
 }
 
-    .item-price::before {
+    .item-price::after {
         content: 'zł';
         font-weight: 100;
         margin-right: 0.3rem;
@@ -454,7 +454,7 @@ form {
     font-size: 0.8rem;
 }
 
-.dialog .topping-price::before {
+.dialog .topping-price::after {
     content: 'zł';
 }
 
@@ -686,7 +686,7 @@ input[type=range] {
 }
 
     .loading-bar::after {
-        content: '';
+        content: 'cm';
         display: block;
         width: 200px;
         height: 100%;

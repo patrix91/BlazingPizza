@@ -41,7 +41,7 @@
             @foreach (var configuredPizza in order.Pizzas)
             {
                 <div class="cart-item">
-                    <div class="title">@(configuredPizza.Size)" @configuredPizza.Special.Name</div>
+                    <div class="title">@(configuredPizza.Size)cm @configuredPizza.Special.Name</div>
                     <div class="item-price">
                         @configuredPizza.GetFormattedTotalPrice()
                     </div>
