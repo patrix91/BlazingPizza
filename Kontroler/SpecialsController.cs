@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using BlazingPizza.Dane;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 using BlazingPizza.Model;
+using BlazingPizza.Dane;
 
 namespace BlazingPizza.Kontroler;
 

@@ -45,5 +45,9 @@ namespace BlazingPizza.Usługi
         {
             Order.Pizzas.Remove(pizza);
         }
+        public void ResetOrder()
+        {
+            Order = new Order();
+        }
     }
 }
