@@ -6,24 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Pages\Checkout.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.7" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\Checkout.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Pages\Checkout.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Pages\Checkout.razor" />
   </ItemGroup>
 
 </Project>

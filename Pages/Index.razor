@@ -1,6 +1,6 @@
 @page "/"
 @using BlazingPizza.Model
-@using BlazingPizza.Us³ugi;
+@using BlazingPizza.Us³ugi
 
 @inject HttpClient HttpClient
 @inject NavigationManager NavigationManager
@@ -11,11 +11,15 @@
         <img src="img/logo.svg" />
     </a>
 
-    <a href="" class="nav-tab active">
+    <NavLink href="" class="nav-tab" Match="NavLinkMatch.All">
         <img src="img/pizza-slice.svg" />
         <div>Zamów Pizze</div>
-    </a>
+    </NavLink>
 
+    <NavLink href="myorders" class="nav-tab">
+        <img src="img/bike.svg" />
+        <div>Moje zamówienia</div>
+    </NavLink>
 </div>
 
 <div class="main">
