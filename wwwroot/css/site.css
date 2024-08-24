@@ -428,10 +428,11 @@ form {
         width: unset;
     }
 
-    .dialog-body .size-label {
-        min-width: 110px;
-        text-align: right;
-    }
+.dialog-body .size-label {
+    min-width: 110px;
+    text-align: right;
+    padding-right: 50px;
+}
 
 .dialog .toppings {
     text-align: center;

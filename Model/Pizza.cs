@@ -8,8 +8,10 @@ namespace BlazingPizza
     public class Pizza
     {
         public const int DefaultSize = 32;
-        public const int MinimumSize = 24;
-        public const int MaximumSize = 54;
+        public const int MinimumSize = 28;
+        public const int MaximumSize = 50;
+
+        public static int[] AllowedValues { get; set; } = { 28, 32, 42, 50 };
 
         public int Id { get; set; }
 

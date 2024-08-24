@@ -9,11 +9,15 @@
         </div>
         <form class="dialog-body">
             <div>
-                <label>Rozmiar:</label>
-                <input type="range" min="@Pizza.MinimumSize" max="@Pizza.MaximumSize" step="1" @bind="Pizza.Size" />
-                <span class="size-label">
-                    @(Pizza.Size)cm (@(Pizza.GetFormattedTotalPrice()) zł)
-                </span>
+                <label>
+                    Rozmiar: 
+                </label>
+                <InputRadioGroup @bind-Value="Pizza.Size">
+                @foreach (var size in Pizza.AllowedValues)
+                {
+                    <InputRadio Value="size"/><span class="size-label">@size cm</span>
+                }
+                </InputRadioGroup>
             </div>
         </form>
 
@@ -32,4 +36,3 @@
     [Parameter] public EventCallback OnCancel { get; set; }
     [Parameter] public EventCallback OnConfirm { get; set; }
 }
-

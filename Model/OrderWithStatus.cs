@@ -24,7 +24,7 @@ public class OrderWithStatus
         }
         else if (DateTime.Now < dispatchTime + DeliveryDuration)
         {
-            statusText = "Wyszło do dostawy";
+            statusText = "W dostawie";
         }
         else
         {
