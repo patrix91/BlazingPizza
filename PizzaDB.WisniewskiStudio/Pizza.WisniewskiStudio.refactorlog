@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="700cf36f-6571-4f96-b2df-c143ee52e3cb" ChangeDateTime="09/16/2024 13:25:31">
+    <Property Name="ElementName" Value="[dbo].[FK_Pizzas_Orders_OrderId]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Pizzas]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Pizzas_Orders]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2b375c70-9b48-47e9-9b1f-2cde6ab7f1dd" ChangeDateTime="09/16/2024 13:25:48">
+    <Property Name="ElementName" Value="[dbo].[FK_Pizzas_Orders]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Pizzas]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Pizzas_Orders_OrderId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="90b8a3a7-7650-4b71-8047-46e68748a6d6" ChangeDateTime="09/16/2024 13:27:47">
+    <Property Name="ElementName" Value="[dbo].[FK_Pizzas_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Pizzas]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Pizzas_Specials_SpecialId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="66c1a1a0-e703-4c32-9c20-ac924536dc1e" ChangeDateTime="09/16/2024 13:34:07">
+    <Property Name="ElementName" Value="[dbo].[Pizzas].[IX_Pizzas_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[dbo].[Pizzas]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_Pizzas_OrderId]" />
+  </Operation>
+</Operations>

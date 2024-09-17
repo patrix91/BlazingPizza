@@ -2,11 +2,18 @@
 # Ten plik .gitignore został utworzony automatycznie przez Microsoft(R) Visual Studio.
 ################################################################################
 
-/obj
-/bin/Debug/net6.0
-/.vs
-/bin/Debug/net8.0
-/Properties/PublishProfiles
-/PublishingSettings
-/bin/Release/net8.0
+Pizza.WisniewskiStudio/obj
+Pizza.WisniewskiStudio/bin/Debug/net6.0
+Pizza.WisniewskiStudio/.vs
+Pizza.WisniewskiStudio/bin/Debug/net8.0
+Pizza.WisniewskiStudio/Properties/PublishProfiles
+Pizza.WisniewskiStudio/PublishingSettings
+Pizza.WisniewskiStudio/bin/Release/net8.0
 /.config
+Pizza.WisniewskiStudio/appsettings.json
+/PizzaDB.WisniewskiStudio/PublishProfiles/Pizza.WisniewskiStudio.publish.xml
+/PizzaDB.WisniewskiStudio/bin/Debug
+/PizzaDB.WisniewskiStudio/obj/Debug
+/PizzaDB.WisniewskiStudio/PizzaDB.WisniewskiStudio.dbmdl
+*.jfm
+/.vs/WisniewskiStudio
