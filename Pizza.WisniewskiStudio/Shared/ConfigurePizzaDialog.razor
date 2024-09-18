@@ -1,0 +1,38 @@
+﻿@using Pizza.WisniewskiStudio.Model
+
+
+<div class="dialog-container">
+    <div class="dialog">
+        <div class="dialog-title">
+            <h2>@Pizza.Special.Name</h2>
+            @Pizza.Special.Description
+        </div>
+        <form class="dialog-body">
+            <div>
+                <label>
+                    Rozmiar: 
+                </label>
+                <InputRadioGroup @bind-Value="Pizza.Size">
+                @foreach (var size in Pizza.AllowedValues)
+                {
+                    <InputRadio Value="size"/><span class="size-label">@size cm</span>
+                }
+                </InputRadioGroup>
+            </div>
+        </form>
+
+        <div class="dialog-buttons">
+            <button class="btn btn-secondary mr-auto" @onclick="OnCancel">Anuluj</button>
+            <span class="mr-center">
+                Cena: <span class="price">@(Pizza.GetFormattedTotalPrice())</span>
+            </span>
+            <button class="btn btn-success ml-auto" @onclick="OnConfirm">Zamów</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public Pizza Pizza { get; set; }
+    [Parameter] public EventCallback OnCancel { get; set; }
+    [Parameter] public EventCallback OnConfirm { get; set; }
+}
